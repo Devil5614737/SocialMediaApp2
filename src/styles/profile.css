@@ -1,0 +1,212 @@
+.profileInfo {
+  margin-top: 42px;
+}
+
+.profileInfo .profileInfoContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.profileInfo .profileInfoContainer .profileImageContainer {
+  position: relative;
+}
+
+.profileInfo .profileInfoContainer .profileImageContainer img {
+  width: 160px;
+  height: 160px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.profileInfo .profileInfoContainer .profileImageContainer label {
+  width: 40px;
+  height: 40px;
+  background-color: #FF0374;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.profileInfo .profileInfoContainer .profileImageContainer label img {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.profileInfo .profileInfoContainer .profileImageContainer input {
+  display: none;
+}
+
+.userStats {
+  margin-top: 12px;
+}
+
+.userStats .userStatsContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.userStats .userStatsContainer p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userStats .userStatsContainer p img {
+  width: 20px;
+  cursor: pointer;
+  margin-left: 4px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.userStats .userStatsContainer p::-moz-selection {
+  background-color: #FF0374;
+  color: white;
+}
+
+.userStats .userStatsContainer p::selection {
+  background-color: #FF0374;
+  color: white;
+}
+
+.userStats .userStatsContainer p span {
+  font-weight: bold;
+  margin-right: 6px;
+}
+
+.userStats .userStatsContainer p span::-moz-selection {
+  background-color: #FF0374;
+  color: white;
+}
+
+.userStats .userStatsContainer p span::selection {
+  background-color: #FF0374;
+  color: white;
+}
+
+.post .postContainers {
+  padding: 1em 5%;
+}
+
+.post .postContainers .postTitle p {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.post .postContainers .posts {
+  margin-top: 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
+}
+
+@media screen and (max-width: 977px) {
+  .post .postContainers .posts {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .post .postContainers .posts {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .post .postContainers .posts {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .post .postContainers .posts {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.post .postContainers .posts .postImages {
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.post .postContainers .posts .postImages img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  height: 100%;
+}
+
+.post .postContainers .posts .postImages img:hover {
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.usernameInput {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 250px;
+  width: 200px;
+  background-color: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  padding: 1em;
+}
+
+.usernameInput input {
+  width: 100%;
+  border: none;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.usernameInput input:focus {
+  outline: none;
+}
+
+.usernameInput button {
+  font-size: 1.4rem;
+  cursor: pointer;
+  border: none;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 112px;
+  padding: .3em 1em;
+}
+
+.usernameInput button:nth-of-type(2) {
+  margin-top: 12px;
+  background-color: red;
+  color: white;
+}
+/*# sourceMappingURL=profile.css.map */

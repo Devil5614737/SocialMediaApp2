@@ -1,0 +1,245 @@
+.main {
+  margin-top: 52px;
+}
+
+.main .mainContainer {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 1em 5%;
+}
+
+.main .mainContainer .uploadContainer {
+  width: 600px;
+  position: relative;
+  height: 100px;
+}
+
+@media screen and (max-width: 650px) {
+  .main .mainContainer .uploadContainer {
+    width: 100%;
+  }
+}
+
+.main .mainContainer .uploadContainer textarea {
+  width: 100%;
+  height: 100%;
+  resize: none;
+  padding: 0.5em;
+  font-size: 1.4rem;
+  background-color: #f3f3f3;
+  border: none;
+}
+
+.main .mainContainer .uploadContainer label {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+}
+
+.main .mainContainer .uploadContainer label img {
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+}
+
+.main .mainContainer .uploadContainer input {
+  display: none;
+}
+
+.main .mainContainer .uploadContainer .postBtn {
+  position: absolute;
+  right: 0;
+  width: 130px;
+  height: 40px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 12px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff0374;
+  color: white;
+}
+
+.post {
+  margin-top: 112px;
+}
+
+.post .postContainer .card {
+  padding-bottom: 1em;
+  border-radius: 16px;
+  width: 600px;
+  -webkit-box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 10px 38px -4px rgba(0, 0, 0, 0.25);
+  margin-top: 52px;
+}
+
+@media screen and (max-width: 650px) {
+  .post .postContainer .card {
+    width: 100%;
+  }
+}
+
+.post .postContainer .card .cardTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.post .postContainer .card .cardTop img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post .postContainer .card .cardTop p {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 12px;
+}
+
+.post .postContainer .card img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 400px;
+}
+
+.post .postContainer .card .cardRes {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post .postContainer .card .cardRes .cardResLeft {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post .postContainer .card .cardRes .cardResLeft img {
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 12px;
+}
+
+.post .postContainer .card .cardRes .cardResLeft button {
+  font-size: 1.6rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-left: 8px;
+  border: none;
+  background-color: white;
+}
+
+.post .postContainer .card .cardTitle {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post .postContainer .card .cardTitle p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.post .postContainer .card .cardTitle p:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 12px;
+}
+
+.post .postContainer .card .cardComments {
+  margin-top: -12px;
+  padding: 1em;
+  overflow: hidden;
+  height: 50px;
+  overflow-y: auto;
+}
+
+.post .postContainer .card .cardComments .cardCommentsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.post .postContainer .card .cardComments .cardCommentsContainer p {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.post .postContainer .card .cardComments .cardCommentsContainer p:nth-of-type(2) {
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-left: 12px;
+}
+
+.post .postContainer .card .cardComment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1em;
+}
+
+.post .postContainer .card .cardComment input {
+  width: 90%;
+  height: 40px;
+  background-color: #F5F5F5;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: .7em;
+}
+
+.post .postContainer .card .cardComment p {
+  font-weight: bold;
+  font-size: 1.4rem;
+  cursor: pointer;
+  margin-left: 12px;
+  color: #FF0374;
+}
+
+.time {
+  font-weight: 500;
+  color: grey;
+  font-size: 1.1rem;
+}
+
+.likesCount {
+  font-size: 1.4rem;
+  padding: 0em 2%;
+}
+
+.likesCount span {
+  margin-left: 8px;
+}
+/*# sourceMappingURL=home.css.map */
