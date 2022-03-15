@@ -42,6 +42,13 @@
   margin-left: 42px;
 }
 
+@media screen and (max-width: 650px) {
+  .navbar .navbarContainer .links p {
+    font-size: 1.3rem;
+    margin-left: 22px;
+  }
+}
+
 .navbar .navbarContainer .links img {
   width: 25px;
   height: 25px;
@@ -49,5 +56,13 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin-left: 42px;
+}
+
+@media screen and (max-width: 650px) {
+  .navbar .navbarContainer .links img {
+    width: 19px;
+    height: 19px;
+    margin-left: 22px;
+  }
 }
 /*# sourceMappingURL=navbar.css.map */
